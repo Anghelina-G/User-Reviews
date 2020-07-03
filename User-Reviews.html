@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+       
+    <style>
+        body{
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        .bg {
+            margin-top: 50px;
+            background-image:linear-gradient(rgba(105, 183, 246, 0.637), rgba(40, 155, 250, 0.65)), url(img/testi-bg.jpg);
+            background-blend-mode:hard-light;
+        }
+
+        header {
+            margin-bottom: 50px;
+            
+            text-align: center; 
+        }
+ h1{
+    font-weight:800;
+    font-size: 1.5em;
+ }
+ p::before{
+     content: "\00201F";
+ }
+ p::after{
+     content: "\00201D";
+ }
+        .container {
+             width: 1100px;
+            margin: auto;
+
+        }
+
+        .carusel {
+            padding-top: 50px;
+            padding-bottom: 50px;
+           
+        }
+
+        .owl-carousel {
+            display: flex;
+           
+        }
+
+        .reviews {
+            width: 500px;
+            display: flex;
+            align-items: center;
+            margin-right:30px ;
+           
+        }
+        .reviews h3::after{
+            content: "  \002605  \002605  \002605  \002605  \002605";
+            color: yellow;
+        }
+        
+        .owl-carousel .owl-item img {
+            width: 50%;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .owl-theme .owl-nav {
+            display: none;
+        }
+
+        @media (max-width: 960px){
+    .container{
+        width: 90%;
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="bg">
+        <section class="carusel container">
+
+            <header>
+                <h1>User Reviews</h1> 
+                <p>Lorem ipsum dolor sit amet consect imilique facere aspernatur! Ducimus modi
+                    rerum explicabo?</p>
+            </header>
+
+            <div class="owl-carousel owl-theme">
+                <div class="reviews">
+                    <img src="https://html.dynamiclayers.net/at/appico/img/testi-2.jpg" alt="">
+                    <div class="text">
+                        <h3>Lorem, ipsum.</h3> 
+                        <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim, suscipit
+                                laudantium explicabo fugit cum incidunt cupiditate accusantium reiciendis.</i></p>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <img src="https://html.dynamiclayers.net/at/appico/img/testi-4.jpg" alt="">
+                    <div class="text">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim, suscipit
+                                laudantium explicabo fugit cum incidunt cupiditate accusantium reiciendis.</i></p>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <img src="https://html.dynamiclayers.net/at/appico/img/testi-3.jpg" alt="">
+                    <div class="text">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim, suscipit
+                                laudantium explicabo fugit cum incidunt cupiditate accusantium reiciendis.</i></p>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <img src="https://html.dynamiclayers.net/at/appico/img/testi-1.jpg" alt="">
+                    <div class="text">
+                        <h3>Lorem, ipsum.</h3>
+                        <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur enim, suscipit
+                                laudantium explicabo fugit cum incidunt cupiditate accusantium reiciendis.</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    960: {
+                        items: 1
+                    },
+                    1240: {
+                        items: 2
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
